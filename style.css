@@ -6,7 +6,7 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f0f5; /* Fondo suave */
+    background: linear-gradient(to top, #000 25%, #ccc 100%);
     color: #333;
     padding: 20px;
 }

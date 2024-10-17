@@ -6,7 +6,7 @@
 
 body {
     font-family: Arial, sans-serif;
-    background: linear-gradient(to top, #000 25%, #ccc 100%);
+    background: linear-gradient(to top, #ffffff 25%, #ffffff 100%);
     color: #333;
     padding: 20px;
 }
@@ -34,7 +34,11 @@ section {
 }
 
 #basquet {
-    background-color: #ffcc80; /* Naranja suave */
+    box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.35), 0 8px 30px 0 rgba(0, 0, 0, 0.20);
+    position: relative;
+    animation-name: basquet;
+    animation-duration: 4s;
+    background-color:rgb(252, 182, 31);
 }
 
 #basquet h2 {
@@ -42,7 +46,10 @@ section {
 }
 
 #musica {
-    background-color: #90caf9; /* Azul suave */
+    box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.35), 0 8px 30px 0 rgba(0, 0, 0, 0.20);    position: relative;
+    animation-name: musica;
+    animation-duration: 4s;
+    background-color:rgb(34, 160, 156);
 }
 
 #musica h2 {
@@ -50,7 +57,10 @@ section {
 }
 
 #viajar {
-    background-color: #a5d6a7; /* Verde suave */
+    box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.35), 0 8px 30px 0 rgba(0, 0, 0, 0.20);    position: relative;
+    animation-name: montana;
+    animation-duration: 4s;
+    background-color:rgb(51, 160, 18);
 }
 
 #viajar h2 {
@@ -99,4 +109,22 @@ footer p {
 /* Contenido */
 .contenido {
     flex: 1;
+}
+
+
+/*Animaciones*/
+
+@keyframes basquet {
+    0%   {background-color:rgb(255, 255, 255); opacity:0; left:-500px; top:0px;}
+    100% {background-color:rgb(252, 182, 31); opacity:1; left:0px; top:0px;}
+}
+
+@keyframes musica {
+    0%   {background-color:rgb(255, 255, 255); opacity:0; left:500px; top:0px;}
+    100% {background-color:rgb(34, 160, 156); opacity:1; left:0px; top:0px;}
+}
+
+@keyframes montana {
+    0%   {background-color:rgb(255, 255, 255); opacity:0; left:-500px; top:0px;}
+    100% {background-color:rgb(51, 160, 18); opacity:1; left:0px; top:0px;}
 }
